@@ -1,0 +1,162 @@
+En un terminal (MacOS y Linux) o consola de Git (Windows), desarrolle de forma separada lo
+siguiente:
+
+- Crear en el directorio contenidos/ un archivo de nombre modulo4.txt, con el siguiente
+texto:
+
+Mkdir contenidos
+Cd contenidos 
+
+Touch modulo4.txt
+
+Construir aplicaciones web dinámicas utilizando el entorno de desarrollo Java
+
+- Agregue el nuevo archivo al repositorio y suba los cambios con el mensaje “Agregada la
+información del módulo 4”.
+
+Git add
+git commit -m "agregada informacion del modulo 4"
+
+
+- Mostrar el historial de cambios del repositorio
+
+Git status
+
+- Cree una nueva rama de nombre awakers
+
+Git branch awakens
+
+
+- Acceda a la rama recién creada, y en la carpeta raíz de ésta cree el archivo lista.txt,
+agregando la siguiente información:
+
+Seiya de Pegaso Serena Tsukino
+Gokú nivel dios
+El lagarto Juancho
+La Princesa Mononoke 
+
+git checkout awakers
+Touch lista 
+
+- Agregar los cambios al repositorio, y aplicarlos usando el mensaje “Agregado el listado
+de super-awakers”.
+
+git add .
+git commit -m "super-awakers"
+
+- Mostrar el historial del repositorio, considerando todas las ramas.
+
+Git log
+
+commit 3a856c0e07d8907ffc9e4bd3d07863b831267b5e (HEAD -> awakers)
+Author: Daniel Zamora <danielz.informatico@gmail.com>
+Date:   Fri Jun 5 19:31:26 2020 -0400
+
+    super-awakers
+
+commit 78b4fa9960f36b50e6997f1ac192491a0e7db9db (master)
+Author: Daniel Zamora <danielz.informatico@gmail.com>
+Date:   Fri Jun 5 19:25:13 2020 -0400
+
+    agregada informacion del modulo 4
+
+
+- Apuntar la cabecera a la rama “master”
+
+git checkout master
+
+- Fusionar la rama “awakers” con la rama “master”
+
+git merge awakers
+
+- Eliminar la rama awakers
+
+git branch -d awakers
+
+- Cree nuevamente la rama awakers, y haga apuntar la cabecera a la rama recién creada
+
+Git branch awakens 
+Git checkout awakens
+
+- Modifique el archivo lista.txt para que contenga lo siguiente: 
+
+La Princesa Mononoke
+Serena Tsukino 
+
+- Añada los cambios al repositorio y apliquelos con el mensaje “Modificada la lista de
+awakers”
+
+Git status
+Git add .
+Git commit -m "Modificada la lista de awakers"
+
+- Apunte a la rama “master”, y actualice el documento “lista.txt” por el siguiente
+contenido:
+
+Seiya de Pegaso
+Gokú nivel dios 
+
+git checkout master
+Actualizando lista con nuevos datos
+
+- Añada los cambios en la rama “master” y apliquelos con el mensaje “Agregados otros
+awakers”
+
+Git status 
+Git add
+Git commit -m "Agregado otro awakers"
+
+- Fusionar las ramas existentes; esto generará un conflicto, que debe ser solucionado
+actualizando el archivo lista.txt con el siguiente contenido:
+La Princesa Mononoke
+Serena Tsukino
+Seiya de Pegaso
+Gokú nivel dios
+Nairobi, la ama
+
+Git merge awakens
+Auto-merging lista.txt
+CONFLICT (content): Merge conflict in lista.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+Actualizando información 
+
+- Añadir los cambios al repositorio y aplicarlos con el mensaje “Lista definitiva de awakers online”.
+
+git merge awakers
+git commit -m "Lista definitiva de awakers online"
+
+
+- Mostrar el historial del repositorio considerando todas las ramas existentes.
+
+Git log 
+
+commit 7ead360369ed09e4927603e99a0377e8bba75314
+Author: Daniel Zamora <danielz.informatico@gmail.com>
+Date:   Fri Jun 5 19:43:51 2020 -0400
+
+    Agregados otro awakers
+
+commit 3b0fdace64129300a5047ef9a20927ae2254bbaf (awakers)
+Author: Daniel Zamora <danielz.informatico@gmail.com>
+Date:   Fri Jun 5 19:39:01 2020 -0400
+
+    Modificada la lista de awakers
+
+commit 3a856c0e07d8907ffc9e4bd3d07863b831267b5e
+Author: Daniel Zamora <danielz.informatico@gmail.com>
+Date:   Fri Jun 5 19:31:26 2020 -0400
+
+    super-awakers
+
+commit 78b4fa9960f36b50e6997f1ac192491a0e7db9db
+Author: Daniel Zamora <danielz.informatico@gmail.com>
+Date:   Fri Jun 5 19:25:13 2020 -0400
+
+    agregada informacion del modulo 4
+
+Para finalizar, verifique con su compañero el directorio de archivos creado, su tamaño en bytes y su cantidad total de archivos y carpetas. Además, intercambie el resultado obtenido en el documento ejercicio3.txt, y verifique si existe alguna diferencia.
+
+ ls -la
+
+

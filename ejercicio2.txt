@@ -1,0 +1,112 @@
+Siga entonces las siguientes instrucciones:
+- Diríjase a la carpeta en la que se encuentra el repositorio
+
+cd fullstackjava
+
+- Verique los archivos existentes hasta el momento, y su tamaño total
+
+ls -la
+
+- Cree una carpeta de nombre modulos, y en ella un documento de nombre modulo1.txt.
+
+mkdir modulos
+Cd modulos
+touch modulo1.txt
+
+- El archivo anterior debe tener el siguiente contenido: 
+
+Codificar piezas de software en Java utilizando el paradigma de orientación a objetos.
+
+- Agregar los archivos modificados y/o creados al repositorio
+
+Git init 
+Git add .
+
+
+- Aplicar los cambios realizados usando el mensaje “Se agrega el módulo 1”
+
+git commit -m "se agrega el modulo1"
+
+
+- Despliegue el historial de cambios
+
+Git log
+
+
+- Crear en el mismo directorio un archivo de nombre modulo2.txt, con el siguiente
+contenido: 
+
+Construir consultas a una base de datos relacional utilizando lenguaje SQL para obtener y
+modificar información.
+
+Touch modulo2.txt
+
+- Agregue el nuevo archivo al repositorio y suba los cambios con el mensaje “Agregada la
+información del módulo 2”.
+
+Git status
+Git add .
+Git commit -m "Agregada la información del modulo 2"
+
+
+- Crear en el mismo directorio un archivo de nombre modulo3.txt, con el siguiente
+contenido:
+Construir una página web responsiva básica utilizando HTML, CSS y JavaScript acorde a las
+buenas prácticas de la industria
+
+touch modulo3.txt
+
+
+- Agregue el nuevo archivo al repositorio y suba los cambios con el mensaje “Añadido el
+material del módulo 3”. 
+
+Git add .
+Git commit -m "Añadiendo el material del modulo 3"
+
+- En el archivo contenidos.txt, agregue al final del documento, en una nueva línea, el texto
+“Módulo 5: Desarrollo de aplicaciones JEE con Spring Framework”.
+
+Cd ..
+
+
+- Agregar los cambios al repositorio, y aplique los cambios usando el mensaje “Temario
+del curso completo”.
+
+Git add
+git commit -m "Temario del curso completo"
+
+
+- Muestre el contenido del directorio, y su tamaño total.
+
+ls -la
+
+
+- Finalmente, despliegue por última vez el historial de cambios del repositorio. 
+
+
+Git log
+
+commit b8ace763f03f120d19dec9037ae5e107fc82c852 (HEAD -> master)
+Author: Daniel Zamora <danielz.informatico@gmail.com>
+Date:   Fri Jun 5 17:57:26 2020 -0400
+
+    Temario del curso completo
+
+commit 30a9890a32e9cb3cd241c2f6fdd24735ae9d195a
+Author: Daniel Zamora <danielz.informatico@gmail.com>
+Date:   Fri Jun 5 17:55:17 2020 -0400
+
+    Añadiendo el material del modulo 3
+
+commit f9d30b2eba80a1babcb33a598c8b3ff9b7932c65
+Author: Daniel Zamora <danielz.informatico@gmail.com>
+Date:   Fri Jun 5 17:53:52 2020 -0400
+
+    Agregada la informacion del modulo 2
+
+commit 527af182d46893140b8098eedf35ddb05887b56c
+Author: Daniel Zamora <danielz.informatico@gmail.com>
+Date:   Fri Jun 5 17:50:01 2020 -0400
+
+    se agrega el modulo1
+:

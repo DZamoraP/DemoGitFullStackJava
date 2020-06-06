@@ -1,0 +1,81 @@
+ Sitúese en la carpeta en la que desee crear el repositorio.
+ 
+• Cree una carpeta, y dentro de la misma un repositorio, ambos con el nombre
+fullstackjava
+
+mkdir fullstackjava
+cd fullstackjava 
+
+git init 
+
+• Genere una consulta que permite verificar el estado del repositorio
+
+git status
+
+• Cree un documento de texto de nombre contenidos.txt, que posea el siguiente
+contenido: 
+
+Módulo 1: Programación en Java
+Módulo 2: Lenguaje de Consultas a una Base de Datos
+Módulo 3: Fundamentos de Desarrollo Web 
+
+touch contenido.txt
+
+• Validar que el contenido ingresado esté efectivamente cargado. Verifique además el
+tamaño del archivo y sus permisos de acceso.
+
+Git status
+
+Ls -la
+
+• Añada el archivo al repositorio.
+
+Git add .
+
+
+• Aplique los cambios realizados sobre el repositorio, usando como mensaje “Primera
+versión del temario subida a repositorio”.
+
+git commit -m “Primera versión del temario subida a repositorio” 
+
+
+• Añada una nueva línea al final del archivo, con el contenido “Módulo 4: Desarrollo de
+aplicaciones web dinámicas con Java”.
+
+• Verificar qué cambios existen en el repositorio que deban ser almacenados.
+
+Git status - en rojo modified:   contenido.txt
+
+
+• Aplicar nuevamente los cambios en el repositorio, esta vez con el mensaje “Versión
+actualizada del contenido”.
+
+Git add .
+
+git commit -m "Version actualizada del contenido"
+
+• Ver el registro de cambios creados sobre el repositorio.
+
+Git log
+
+• Finalmente, validar el estado del repositorio.
+
+➜  fullstackjava git:(master) git log
+
+commit 96df8352541a55f53e17bef22545c9321a189c02 (HEAD -> master)
+Author: Daniel Zamora <danielz.informatico@gmail.com>
+Date:   Fri Jun 5 17:36:14 2020 -0400
+
+    Version actualizada del contenido
+
+commit 1a456f90e632aecd9a1cfbc171e0ede19a27531b
+Author: Daniel Zamora <danielz.informatico@gmail.com>
+Date:   Fri Jun 5 17:33:21 2020 -0400
+
+    “Primera
+(END)
+
+
+
+
+
